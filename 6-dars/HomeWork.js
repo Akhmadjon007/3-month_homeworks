@@ -1,0 +1,90 @@
+"use strict";
+
+// // 1-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Array.prototype.foundUnique = function (arr, unique = false) {
+//     let result = [];
+//     for (let i = 0; i < this.length; i++) {
+//         if (arr.includes(this[i])) {
+//             if (unique && result.includes(this[i])) continue;
+//             result[result.length] = this[i];
+//         }
+//     }
+
+//     return result;
+// };
+
+// let arr = [21, 36, 47, 25, 25];
+// let arr1 = [22, 36, 48, 25];
+
+// console.log(arr.foundUnique(arr1));
+// console.log(arr.foundUnique(arr1, true));
+
+// // 2-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// String.prototype.reverse = function () {
+//     let str = "";
+//     for (let i = this.length - 1; i >= 0; i--) {
+//         str += this[i];
+//     }
+//     return str;
+// };
+
+// console.log("nima gap".reverse());
+
+// // 3-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function consa(name, age) {
+//     this.ism=name,
+//     this.yosh=age
+// }
+// consa.prototype.getName = function(){
+//     return this.ism
+// }
+// let ali = new consa('ali', 12)
+
+// console.log(ali.getName());
+
+// // 4-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function ObjConstructor(name, age) {
+//     this.name=name,
+//     this.age=age
+// }
+
+// ObjConstructor.prototype.getAge=function(){
+//     return this.age
+// }
+// let a = new ObjConstructor('ali', 12)
+// let b = new ObjConstructor('vali', 49)
+// let c = new ObjConstructor('g\'ani', 36)
+// let d = new ObjConstructor('bali', 71)
+// console.log(a.getAge());
+// console.log(b.getAge());
+// console.log(c.getAge());
+// console.log(d.getAge());
+
+// // 5-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Array.prototype.myConcat=function (arr) {
+//     return [...this, ...arr]
+// }
+
+// console.log([1,2].myConcat([3,4]));
+
+// // 6-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Object.prototype.keys= function(){
+    let arr=[]
+    for (const k in this) {
+        arr[arr.length]=k
+    }
+    return arr
+}
+
+let a={a:1,b:2}
+console.log(a.keys());
+// // 7-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // 8-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // 9-masala ////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // 10-masala ///////////////////////////////////////////////////////////////////////////////////////////////////////
